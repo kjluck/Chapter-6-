@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Kenneth Luck
+Date: Friday, April 15, 2022
+File Name: Chapter 6, "Apply" .css file
 */
 
 /* CSS Reset */
@@ -13,7 +13,7 @@ body, header, nav, main, footer, h1, div, article, h2 {
 
 /* Style rules for body */
 body {
-	background-color: #fe9972;
+	background: linear-gradient: (to left, #fe9972, #fe9972;)
 }
 
 /* Style rules for mobile viewport */
@@ -23,7 +23,7 @@ header {
 	font-family: Verdana, Arial, sans-serif;
 	margin: 1em;
 	text-align: center;
-    color: #341509;
+  color: #341509;
 }
 
 /* Style rules for the main content  */
@@ -43,5 +43,27 @@ article {
 footer {
 	font-size: .70em;
 	text-align: center;
-    color: #341509;
+  color: #341509;
+  float: left;
 }
+
+/* Media Query for Tablet Viewport.  */
+
+@media screen and (min-width: 841px), print {
+  article {
+  width: 43%;
+  float: left;
+  height: 160px;}
+
+/* Media Query for Desktop Viewport */
+
+@media screen (min-width: 900px) {
+  article {
+    width: 27%;
+    height: 140px;
+  }
+
+  nav a:hover {
+      color: #a22c02;
+      background-color: #ffe5dc;
+  }
